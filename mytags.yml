@@ -9,16 +9,16 @@
     tags:
     - gitpackage
 
-  - name: install tree
+  - name: install nginx
     apt:
-     name: tree
+     name: nginx
      state: present
     tags:
-    - treepackage
+    - nginxpackage
 
-  - name: install wget
+  - name: install docker
     apt:
-     name: wget
+     name: docker
      state: present
     tags:
-    - wgetpackage
+    - dockerpackage
