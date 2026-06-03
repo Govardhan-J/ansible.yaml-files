@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: Restart docker server
-    ansible.builtin.service
-     name: docker
-     state: present
+    - name: Restart docker service
+      ansible.builtin.service:
+        name: docker
+        state: restarted
