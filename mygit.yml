@@ -7,12 +7,12 @@
      name: git
      state: present
   
-  - name: install tree on nodes
+  - name: install nginx on nodes
     apt:
-     name: tree
+     name: git
      state: present
 
-  - name: install wget on nodes
+  - name: install apache2 on nodes
     apt:
-     name: wget
+     name: apache2
      state: present
